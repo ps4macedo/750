@@ -8,6 +8,7 @@ int64.js
 payload.html
 ps4.js
 utils.js
+blob.js
 jb.c
 jb.js
 netcat.js
