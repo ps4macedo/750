@@ -4,10 +4,6 @@ body{text-align:center;overflow:hidden;background-color:#000000;background-attac
 button{border:2px solid #ffffff; border-radius:4px; padding:8px; background:transparent;}
 </style><br><br>
 <body onload="go()">
-<script>
-if(document.cookie.indexOf('kex=0') >= 0)
-    document.location.replace("index.html#retorno=true");
-</script>
 
 <script>
 function print(){}
@@ -37,13 +33,12 @@ window.midExploit = function(){
 }
 
 window.postExploit = function(){
-    document.cookie = 'kex=0';
-    setTimeout(function()
-    {
+    setTimeout(function(){
         eval.call(window, scriptCode);
         done();
     }, 100);
 };
+
 </script>
 <script src="utils.js"></script>
 <script src="int64.js"></script>
