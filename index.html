@@ -254,7 +254,7 @@ document.getElementById("inputfan").addEventListener("input", function (e) {
 })
 document.getElementById("inputfan").setAttribute("value", localStorage.getItem("fancontrol"));
 
-var clique="<br>(Se clicar aqui, irá <font color=\"#ee596f\">ativar o 1° payload</font> da lista)"
+var clique=""
 function dicas (dica) {
 switch (dica) {
 case 'dicas':document.getElementById("msgs").innerHTML = "Algumas <font color=\"#ee596f\">dicas e informações</font> que podem ajudar.";break;
@@ -266,10 +266,15 @@ case 'memoria':document.getElementById("msgs").innerHTML = "Após 5 erros de mem
 case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para ativar o JB, <font color=\"#ee596f\">deslige totalmente</font> e retire o cabo de força, por 10 min.";break;
 case '6':document.getElementById("msgs").innerHTML = "Clique para ver outros Hosts";break;
 case 'desbloqueioXXX':document.getElementById("msgs").innerHTML = "Payloads para <font style='color:#ee596f;'>debloquear</font> PS4 na FW 7.50."+clique; break;
-case 'desbloqueio':document.getElementById("msgs").innerHTML = "Payloads para <font style='color:#ee596f;'>debloquear</font> PS4 na FW 7.50.<br>(Se clicar aqui, <font color=\"#ee596f\">ativa o HEN 2.1.3 com o WebKit Alternativo</font> da lista de payloads)";break;
+case 'desbloqueio':document.getElementById("msgs").innerHTML = "Payloads para <font style='color:#ee596f;'>debloquear</font> PS4 na FW 7.50.";break;
 case 'uteis1':document.getElementById("msgs").innerHTML = "Lista 1 de <font style='color:#ee596f;'>payloads utilitários</font> para PS4 na FW 7.50."+clique;break;
 case 'uteis2':document.getElementById("msgs").innerHTML = "Lista 2 de <font style='color:#ee596f;'>payloads utilitários</font> para PS4 na FW 7.50."+clique;break;
+
+
+case 'binloader':document.getElementById("msgs").innerHTML = "Permite enviar arquivos<font style='color:#ee596f;'> .BIN</font> para o PS4 pela porta <font style='color:#ee596f;'>9020</font> (usando PS4 PUNCH).";break;
 case 'trainer':document.getElementById("msgs").innerHTML = "Viabiliza a utilização de <font style='color:#ee596f;'>trapaças</font> em jogos."+clique;break;
+/*
+
 case 'hen213':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak (sleirsgoevy) + HEN v2.1.3</font>.";break;
 case 'hen213alt':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + HEN v2.1.3</font> com um webkit altenativo (<font style='color:#ee596f;'>aparentimente bem mais rápido</font>).";break;
 case 'hen213b':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak (sleirsgoevy) + HEN v2.1.3b</font>.";break;
@@ -277,7 +282,6 @@ case 'mira':document.getElementById("msgs").innerHTML = "Ativa <font style='colo
 case 'esp8266':document.getElementById("msgs").innerHTML = "Link (<font style='color:#ee596f;'>acesse pelo pc</font>) para o DOWNLOAD desse Host para o <font style='color:#ee596f;'>ESP8266</font> (100% OFF).<br>Dados: Rede (<font style='color:#ee596f;'>ps4macedo</font>), senha (<font style='color:#ee596f;'>macedo702</font>), DNS (<font style='color:#ee596f;'>11.11.11.11</font>) e configuração (<font style='color:#ee596f;'>11.11.11.11/settings</font>).";break;
 case 'miraMais':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03 + PSVR + Fixs </font>(mugiwara).";break;
 case 'miraMais2':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak + Mira + ToDex + Spoof fw8.03 + PSVR + Fixs </font>(versão 2 - mais estável).";break;
-case 'binloader':document.getElementById("msgs").innerHTML = "Permite enviar arquivos<font style='color:#ee596f;'> .BIN</font> para o PS4 pela porta <font style='color:#ee596f;'>9021 </font> (usando PS4 PUNCH).";break;
 case 'cacheUSB':document.getElementById("msgs").innerHTML = "Link (<font style='color:#ee596f;'>acesse pelo pc</font>) para o DOWNLOAD desse Host para <font style='color:#ee596f;'>CACHE USB0</font>.<br>Descompacte e coloque o arquivo na <font style='color:#ee596f;'>raiz</font>. Com o USB plugado, acesse  <font style='color:#ee596f;'>https://ps4macedo.github.io/usb</font>.";break;
 case 'debug':document.getElementById("msgs").innerHTML = "Permite usar o <font style='color:#ee596f;'>PS4 Offline Account Activator</font>.";break;
 case 'ftp':document.getElementById("msgs").innerHTML = "Gerencie os arquivos do PS4 pelo computador <font style='color:#ee596f;'>via protocolo FTP</font> (FileZilla).";break;
@@ -312,7 +316,8 @@ case 'bee132':document.getElementById("msgs").innerHTML = "Ativa o <font style='
 case '702v6':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>MISTÉRIO...</font> ainda não consegui entender porque esse versão é mais rápida.";break;
 case 'breve':document.getElementById("msgs").innerHTML = "Implementação <font style='color:#ee596f;'>em breve</font>.";break;
 case 'teste':document.getElementById("msgs").innerHTML = "Esse botão é para <font color=\"#ee596f\">testes</font> do desenvolvedor do host. Obrigado.";;break;
-default:document.getElementById("msgs").innerHTML = "erro";
+*/
+default:document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM BREVE</font>";
 }
 }
 
@@ -361,12 +366,12 @@ function retornando(){
 }
 
 //COMEÇA AQUI OS PAYLOADS
-function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
+function load_binloader(){window.location.replace("binloader.html");}
+/*function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
 function load_exploit_HENalt(){window.location.replace("hen.html");}
 function load_exploit_HEN213b(){window.location.replace("hen213b.html");}
 function load_exploit_mira2(){window.location.replace("payload.html#f=mira2.js");}
 function load_exploit_miraMais2(){window.location.replace("payload.html#f=miraMais2.js");}
-function load_binloader(){window.location.replace("binloader.html");}
 function load_esp8266(){window.location.replace("https://github.com/ps4macedo/702/raw/main/apps/ps4macedo.bin");}
 function cache(){window.location.replace("https://github.com/ps4macedo/usb/raw/main/hosts/ps4macedo700v3.rar");}
 function load_dumper(){window.location.replace("payload.html#f=dumper.js");}
@@ -397,6 +402,7 @@ function load_BeefQueef132(){window.location.replace("payload.html#f=BeefQueef13
 function load_spoof(){window.location.replace("payload.html#f=spoof.js");}
 function load_teste1(){window.location.replace("payload.html#f=backup.js");}
 function load_teste2(){window.location.replace("payload.html#f=restore.js");}
+*/
 </script>
 </body>	
 </html>
