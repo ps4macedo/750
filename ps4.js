@@ -153,8 +153,6 @@ function fakeobj(addr) {
 }
 
 function cleanup() {
-	select1.remove();
-	select1 = null;
 	input1.remove();
 	input1 = null;
 	input2.remove();
