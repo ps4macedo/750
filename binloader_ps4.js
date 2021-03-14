@@ -114,7 +114,7 @@ function setupRW() {
 	debug_log("");
 	debug_log("A T E N Ç Ã O !!!");
 	debug_log("O computador deve estar na mesma rede do PS4 (online).");
-	debug_log("Utilize o ip do seu console e a porta 9021.");
+	debug_log("Utilize o ip do seu console e a porta 9020.");
 	debug_log("");
 	debug_log("Endereço do aplicativo para enviar as cargas úteis:");
 	debug_log("https://github.com/ps4macedo/702/raw/main/apps/ps4punch.rar");
@@ -160,6 +160,8 @@ function fakeobj(addr) {
 }
 
 function cleanup() {
+	select1.remove();
+	select1 = null;
 	input1.remove();
 	input1 = null;
 	input2.remove();
@@ -407,7 +409,7 @@ function sprayHTMLTextArea() {
 	debug_log("I n i c i a n d o . . .");
 	debug_log("");
 
-	let textarea_div_elem = document.createElement("div");
+	let textarea_div_elem = window.xyu = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
 	textarea_div_elem.id = "div1";
 	var element = document.createElement("textarea");
