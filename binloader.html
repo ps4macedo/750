@@ -1,5 +1,14 @@
 <html>
+<style>
+body{text-align:center;overflow:hidden;background-color:#000000;background-attachment:fixed; background-size:100%;background-repeat:no-repeat; color:#ee596f;font-size:22px;}
+button{border:2px solid #ffffff; border-radius:4px; padding:8px; background:transparent;}
+</style><br>
 <body onload="go()">
+<script>
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.replace("index.html#retorno=true");
+</script>
+
 <script>
 function print(){}
 
@@ -16,10 +25,10 @@ function preloadScripts(lst){
 
 function done(){
     if(main_ret == 0 || main_ret == 179){
-        alert("You're all set!");
+		alert("P R O N T O ! ! ! \n\nSua carga útel foi enviada com sucesso."); 
         read_ptr_at(0);
     }else{
-        alert("Jailbreak failed! Reboot your PS4 and try again.");
+		alert("Jailbreak FALHOU! Reinicie o PS4 sem sair dessa tela, usando o botão \"PS\" \n e tente novamente.");
 	}
 }
 
@@ -28,7 +37,9 @@ window.midExploit = function(){
 }
 
 window.postExploit = function(){
-    setTimeout(function(){
+    document.cookie = 'kex=0';
+    setTimeout(function()
+    {
         eval.call(window, scriptCode);
         done();
     }, 100);
@@ -39,7 +50,7 @@ window.postExploit = function(){
 <script src="ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
-<button id="input3" onfocus="handle2()"></button>
+<button id="input3" onfocus="handle2()"></button><br>
 <select id="select1">
 <option value="value1">Value1</option>
 </select>
