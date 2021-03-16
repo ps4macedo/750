@@ -274,6 +274,7 @@ case 'trainer':document.getElementById("msgs").innerHTML = "Viabiliza a utiliza�
 case 'binloader':document.getElementById("msgs").innerHTML = "Permite enviar arquivos<font style='color:#ee596f;'> .BIN</font> para o PS4 pela porta <font style='color:#ee596f;'>9020</font> (usando PS4 PUNCH).";break;
 case 'mira':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak (sleirsgoevy) + Mira</font>.";break;
 case 'dumper':document.getElementById("msgs").innerHTML = "Permite fazer <font style='color:#ee596f;'>cópia de segurança</font> de seus jogos <font style='color:#ee596f;'>via USB</font>.";break;
+case 'desnableUp':document.getElementById("msgs").innerHTML = "Desabilitas as <font style='color:#ee596f;'>atualizações automáticas</font> de firmware.";break;
 
 /*
 case 'hen213':document.getElementById("msgs").innerHTML = "Ativa <font style='color:#ee596f;'>Jailbreak (sleirsgoevy) + HEN v2.1.3</font>.";break;
@@ -297,7 +298,6 @@ case 'linkTrainer':document.getElementById("msgs").innerHTML = "Link para o site
 case 'hostOld':document.getElementById("msgs").innerHTML = "Clique no icone <font style='color:#ee596f;'>só se for utilizar o Host anterior</font>.<br>(<font style='color:#ee596f;'>Salve em FAVORITO e limpe a CACHE novamente</font> no 1° acesso)";break;
 case 'toDex':document.getElementById("msgs").innerHTML = "Modo de depuração do console (<font style='color:#ee596f;'>teste de devkit</font>).";break;
 case 'cu10':document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Desabilita</font> a última página usada no navegador PS4.";break;
-case 'desnableUp':document.getElementById("msgs").innerHTML = "Desabilitas as <font style='color:#ee596f;'>atualizações automáticas</font> de firmware.";break;
 case 'enableUp':document.getElementById("msgs").innerHTML = "Habilitas as <font style='color:#ee596f;'>atualizações automáticas</font> de firmware.";break;
 case 'bdBackup':document.getElementById("msgs").innerHTML = "Faz <font style='color:#ee596f;'>cópia do banco de dados e dados de usuários</font> via USB.";break;
 case 'dbRestore':document.getElementById("msgs").innerHTML = "Restaura <font style='color:#ee596f;'>cópia do banco de dados e dados de usuário</font> via USB.";break;
@@ -369,6 +369,7 @@ function retornando(){
 function load_exploit_mira(){window.location.replace("payload.html#f=Mira2.js");}
 function load_binloader(){window.location.replace("binloader.html");}
 function load_dumper(){window.location.replace("payload.html#f=dumper.js");}
+function load_disableUpd(){window.location.replace("payload.html#f=disableUpd.js");}
 
 /*function load_exploit_HEN(){window.location.replace("payload.html#f=hen.js");}
 function load_exploit_HENalt(){window.location.replace("hen.html");}
@@ -388,7 +389,6 @@ function load_webrte(){window.location.replace("webrte.html");}
 function load_debug(){window.location.replace("debug.html");}
 function load_todex(){window.location.replace("payload.html#f=todex.js");}
 function load_enableUpd(){window.location.replace("payload.html#f=enableUpd.js");}
-function load_disableUpd(){window.location.replace("payload.html#f=disableUpd.js");}
 function load_historyBlocker(){window.location.replace("payload.html#f=historyBlocker.js");}
 function load_dbBackup(){window.location.replace("payload.html#f=dbBackup.js");}
 function load_dbRestore(){window.location.replace("payload.html#f=dbRestore.js");}
