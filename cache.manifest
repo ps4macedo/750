@@ -21,3 +21,5 @@ dumper.js
 disableUpd.js
 enableUpd.js
 app2usb.js
+ftp.js
+todex.js
