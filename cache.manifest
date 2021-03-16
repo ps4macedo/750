@@ -23,3 +23,5 @@ enableUpd.js
 app2usb.js
 ftp.js
 todex.js
+restore.js
+backup.js
