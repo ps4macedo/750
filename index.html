@@ -1,5 +1,5 @@
 <html manifest="cache.manifest">
-<head><title>PS4MACEDO 7.55 v1</title></head>
+<head><title>PS4MACEDO 7.5x v1</title></head>
 <body bgcolor="#000000" onload="pegarCheck(); invisivel(); retornando()">
 <style>
 body{color:white;background-attachment:fixed;background-size:100%;background-repeat:no-repeat;}
@@ -237,7 +237,7 @@ else{
 
 <footer>
 	<hr width="75%" size="1" color="#ff5757">	
-	<h1 id=msgs style='font-size:30px;text-align:center;color:#FFFFFF;'>MENU PS4MACEDO <font color="#ee596f">7.55</font> v1</h1>
+	<h1 id=msgs style='font-size:30px;text-align:center;color:#FFFFFF;'>MENU PS4MACEDO <font color="#ee596f">7.5x</font> v1</h1>
 </footer>
 </div>
 
@@ -254,7 +254,7 @@ document.getElementById("inputfan").addEventListener("input", function (e) {
 })
 document.getElementById("inputfan").setAttribute("value", localStorage.getItem("fancontrol"));
 
-var clique=""
+var clique="<br>(Se clicar aqui, irá <font color=\"#ee596f\">ativar o 1° payload</font> da lista)"
 function dicas (dica) {
 switch (dica) {
 case 'dicas':document.getElementById("msgs").innerHTML = "Algumas <font color=\"#ee596f\">dicas e informações</font> que podem ajudar.";break;
@@ -265,10 +265,10 @@ case 'controle':document.getElementById("msgs").innerHTML = "Controle <font colo
 case 'memoria':document.getElementById("msgs").innerHTML = "Após 5 erros de memória cheia, <font color=\"#ee596f\">saia e entre no navegador</font>.";break;
 case 'demora':document.getElementById("msgs").innerHTML = "Demorando muito para ativar o JB, <font color=\"#ee596f\">deslige totalmente</font> e retire o cabo de força, por 10 min.";break;
 case '6':document.getElementById("msgs").innerHTML = "Clique para ver outros Hosts";break;
-case 'desbloqueioXXX':document.getElementById("msgs").innerHTML = "Payloads para <font style='color:#ee596f;'>debloquear</font> PS4 na FW 7.55."+clique; break;
-case 'desbloqueio':document.getElementById("msgs").innerHTML = "Payloads para <font style='color:#ee596f;'>debloquear</font> PS4 na FW 7.55.";break;
-case 'uteis1':document.getElementById("msgs").innerHTML = "Lista 1 de <font style='color:#ee596f;'>payloads utilitários</font> para PS4 na FW 7.55."+clique;break;
-case 'uteis2':document.getElementById("msgs").innerHTML = "Lista 2 de <font style='color:#ee596f;'>payloads utilitários</font> para PS4 na FW 7.55."+clique;break;
+case 'desbloqueioXXX':document.getElementById("msgs").innerHTML = "Payloads para <font style='color:#ee596f;'>debloquear</font> PS4 na <font style='color:#ee596f;'>FW 7.5x</font>."+clique; break;
+case 'desbloqueio':document.getElementById("msgs").innerHTML = "Payloads para <font style='color:#ee596f;'>debloquear</font> PS4 na <font style='color:#ee596f;'>FW 7.5x</font>.<br>(Se clicar aqui, irá <font color=\"#ee596f\">ativar o Mira</font>)";break;
+case 'uteis1':document.getElementById("msgs").innerHTML = "Lista 1 de <font style='color:#ee596f;'>payloads utilitários</font> para PS4 na <font style='color:#ee596f;'>FW 7.5x</font>."+clique;break;
+case 'uteis2':document.getElementById("msgs").innerHTML = "Lista 2 de <font style='color:#ee596f;'>payloads utilitários</font> para PS4 na FW <font style='color:#ee596f;'>7.5x</font>."+clique;break;
 case 'trainer':document.getElementById("msgs").innerHTML = "Viabiliza a utilização de <font style='color:#ee596f;'>trapaças</font> em jogos."+clique;break;
 
 case 'binloader':document.getElementById("msgs").innerHTML = "Permite enviar arquivos<font style='color:#ee596f;'> .BIN</font> para o PS4 pela porta <font style='color:#ee596f;'>9020</font> (usando PS4 PUNCH).";break;
@@ -322,7 +322,7 @@ default:document.getElementById("msgs").innerHTML = "<font color=\"#ee596f\">EM 
 }
 
 function fora(){
-document.getElementById("msgs").innerHTML = "MENU PS4MACEDO <font style='color:#ee596f;'>7.55</font> v1";
+document.getElementById("msgs").innerHTML = "MENU PS4MACEDO <font style='color:#ee596f;'>7.5x</font> v1";
 }
 
 function check() {
