@@ -13,9 +13,9 @@ jb.c
 netcat.js
 jb.js
 750.js
-mira_c-code.js
-Mira2.js
-mira.js
+load.js
+Mira.js
+preload.js
 ps4.js
 dumper.js
 disableUpd.js
