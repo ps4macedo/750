@@ -41,10 +41,10 @@ window.midExploit = function()
     if(document.location.hash)
     {
         var s = decodeURIComponent(document.location.hash.substr(3));
-        preloadScripts(['750.js', 'jb.js', 'mira.js', s, 'mira_c-code.js'], go);
+        preloadScripts(['750.js', 'jb.js', 'preload.js', s, 'load.js'], go);
     }
     else
-        preloadScripts(['750.js', 'jb.js', 'mira.js', 'mira_c-code.js'], go);
+        preloadScripts(['750.js', 'jb.js', 'preload.js', 'load.js'], go);
 }
 
 window.postExploit = function()
@@ -63,9 +63,8 @@ window.postExploit = function()
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
-<!--<br><select id="select1">
+<br><select id="select1">
 <option value="value1">Value1</option>
-</select>-->
-
+</select>
 </body>
 </html>
